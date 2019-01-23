@@ -13,14 +13,12 @@ header {
     background-color: rgb(255,255,255);
     height: 60px;
     width: 100vw;
-    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Raleway', sans-serif;
 }
-.title a {
-    display: flex;
+.title {
     margin-left: 16px;
 }
 nav {
@@ -35,11 +33,7 @@ nav ul li{
 }
 /* Main styles */
 #main {
-    height: calc(100vh - 60px);
-    width: 100vw;
-    max-width: 100%;
-    background: url(../assets/main.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../assets/main.jpg)
 }
 
 

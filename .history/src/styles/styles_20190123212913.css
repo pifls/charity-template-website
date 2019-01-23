@@ -21,7 +21,7 @@ header {
 }
 .title a {
     display: flex;
-    margin-left: 16px;
+    margin-left: 1em;
 }
 nav {
     display: none;
