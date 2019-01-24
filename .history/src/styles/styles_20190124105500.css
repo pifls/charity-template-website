@@ -7,10 +7,6 @@ ul {
     list-style: none;
     margin: 0;
 }
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
 /* Header styles */
 header {
@@ -27,7 +23,7 @@ header {
     transition: all .2s ease-in-out;
 }
 .title:hover {
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 .title a {
     display: flex;
@@ -42,10 +38,6 @@ nav ul {
 }
 nav ul li{
     margin-right: 70px;
-    transition: all .2s ease-in-out;
-}
-nav ul li:hover {
-    transform: scale(1.08);
 }
 /* Main styles */
 #main {

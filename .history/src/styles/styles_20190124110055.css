@@ -42,6 +42,7 @@ nav ul {
 }
 nav ul li{
     margin-right: 70px;
+    text-decoration: none;
     transition: all .2s ease-in-out;
 }
 nav ul li:hover {
