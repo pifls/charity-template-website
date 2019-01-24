@@ -98,5 +98,6 @@ nav ul li:hover {
     }
     .arrow-big {
         display: block;
+        margin-bottom: 3vh;
     }
   }
