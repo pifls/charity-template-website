@@ -77,13 +77,34 @@ nav ul li:hover {
     display: none;
 }
 
+/* About stylings */
 #about {
+    background-color: #fff;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-    background-color: #fefefe;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-rows: 3fr 5fr 4fr 1fr;
 }
+#about h1 {
+    font-size: 1.7em;
+    margin: 4vh 2vw;
+    text-align: center;
+}
+#about h2 {
+    font-size: 0.8em;
+    width: 80vw;
+    justify-self: center;
 
+
+}
+#about .about-img {
+    width: 80vw;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
 @media only screen and (min-width: 800px) {
     nav {
         display: flex;
@@ -98,6 +119,47 @@ nav ul li:hover {
     }
     .arrow-big {
         display: block;
-        margin-bottom: 3vh;
+        transition: all .2s ease-in-out;
     }
+    .arrow-big:hover {
+        transform: scale(1.2);
+    }
+    #about {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 3fr 10vh;
+        grid-template-areas: 
+        "about-title about-title ."
+        " about-photo about-text about-text"
+        "arrow          arrow          arrow";
+    }
+    #about h1 {
+        font-size: 2.8em;
+        margin: 0 2vw;
+        line-height: 1.2;
+        letter-spacing: 3px;
+        grid-area: about-title;
+        justify-self: center;
+        align-self: center;
+    }
+    #about h2 {
+        font-size: 1.3em;
+        width: auto;
+        margin: 0 5vw;
+        line-height: 1.6;
+        letter-spacing: 1px;
+        grid-area: about-text;
+        justify-self: center;
+        align-self: center;
+    }
+    #about .about-img {
+        width: 30vw;
+        height: auto;
+        border-radius: 2%;
+        grid-area: about-photo;
+        justify-self: end;
+    }
+    #about .arrow-con {
+        grid-area: arrow;
+    }
+
   }
