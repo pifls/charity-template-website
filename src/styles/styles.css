@@ -96,7 +96,7 @@ nav ul li:hover {
 .sections-con {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 35vh 35vh;
+    grid-template-rows: 50% 50%;
 }
 .about-section {
     display: grid;
@@ -119,10 +119,6 @@ nav ul li:hover {
     height: auto;
     justify-self: center;
     align-self: center;
-    transition: all .2s ease-in-out;
-}
-.about-section img:hover {
-    transform: scale(1.1);
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
     nav {
@@ -162,9 +158,15 @@ nav ul li:hover {
     .arrow:hover {
         transform: scale(1.2);
     }
+    .about-content {
+        grid-template-rows: 30vh 60vh;
+    }
     #about h1 {
         font-size: 2.4em;
         font-weight: 900;
+        text-decoration: underline;
+        padding: 1em;
+        margin: 2em 0;
         display: grid;
         grid-template-columns: 70% auto;
     }
