@@ -81,7 +81,6 @@ nav ul li:hover {
 
 /* About stylings */
 #about {
-    background-color: #fff;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
@@ -124,10 +123,50 @@ nav ul li:hover {
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-    background: url(../assets/about-bg.jpeg) no-repeat center center;
+    background: url(../assets/donate-bg.jpeg) no-repeat center center;
     background-size: cover;
     display: grid;
     grid-template-rows: 90vh 10vh;
+}
+.donate-con {
+    display: grid;
+    grid-template-rows: 20% 80%; 
+}
+#donate h1 {
+    color: #E8E9EB;
+    font-size: 3.8em;
+    font-family: 'Montserrat', sans-serif;
+    justify-self: center;
+    align-self: center;   
+}
+.donations {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.donation {
+    background-color: #E8E9EB;
+    color: #000;
+    height: 50%;
+    width: 80%;
+    border-radius: 10px;
+    opacity: 0.4;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.donation:hover {
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+.donation h2 {
+    font-size: 2.4em;
+    font-family: 'Montserrat', sans-serif; 
+    justify-self: center;
+    align-self: center   
+    
 }
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
     nav {
@@ -149,6 +188,17 @@ nav ul li:hover {
     }
     .about-section img {
         width: 20%;
+    }
+    .donations {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .donation {
+        height: 60%;
+    }
+    .donation h2 {
+        font-size: 3.4em;
+        justify-self: flex-end;
     }
 
   }
@@ -192,5 +242,17 @@ nav ul li:hover {
         justify-self: flex-end;
         border: none;
         font-size: 2.8em;
+    }
+    .donations {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .donation {
+        height: 70%;
+        width: 70%;
+    }
+    .donation h2 {
+        font-size: 3.4em;
+        justify-self: flex-end;
     }
 }
