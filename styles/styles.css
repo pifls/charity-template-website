@@ -81,7 +81,6 @@ nav ul li:hover {
 
 /* About stylings */
 #about {
-    background-color: #fff;
     height: 100vh;
     width: 100vw;
     max-width: 100%;
@@ -120,6 +119,90 @@ nav ul li:hover {
     justify-self: center;
     align-self: center;
 }
+#donate {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background: url(../assets/donate-bg.jpeg) no-repeat center center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 90vh 10vh;
+}
+.donate-con {
+    display: grid;
+    grid-template-rows: 20% 80%; 
+}
+#donate h1 {
+    color: #E8E9EB;
+    font-size: 3.8em;
+    font-family: 'Montserrat', sans-serif;
+    justify-self: center;
+    align-self: center;   
+}
+.donations {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.donation {
+    background-color: #E8E9EB;
+    color: #000;
+    height: 50%;
+    width: 80%;
+    border-radius: 10px;
+    opacity: 0.4;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.donation:hover {
+    transform: scale(1.03);
+    opacity: 0.8;
+}
+.donation h2 {
+    font-size: 2.4em;
+    font-family: 'Montserrat', sans-serif; 
+    justify-self: center;
+    align-self: center   
+    
+}
+#contact {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+#contact h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9em;
+    margin: 0 0.5em;
+    align-self: center; 
+}
+.contacts {   
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.contact {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    align-self: center;
+}
+.contact img {
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+.contact-fb img, .contact-ig img {
+    cursor: pointer;
+}
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
     nav {
         display: flex;
@@ -141,7 +224,28 @@ nav ul li:hover {
     .about-section img {
         width: 20%;
     }
-
+    .donations {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .donation {
+        height: 60%;
+    }
+    .donation h2 {
+        font-size: 3.4em;
+        justify-self: flex-end;
+    }
+    #contact h1 {
+        justify-self: center;
+    }
+    .contact {
+        grid-template-columns: 35% 55%;
+        grid-column-gap: 10%;
+    }
+    .contact img {
+        width: 20%;
+        justify-self: flex-end;
+    }
   }
 @media only screen and (min-width: 1025px) {
     nav {
@@ -183,5 +287,31 @@ nav ul li:hover {
         justify-self: flex-end;
         border: none;
         font-size: 2.8em;
+    }
+    .donations {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .donation {
+        height: 70%;
+        width: 70%;
+    }
+    .donation h2 {
+        font-size: 3.4em;
+        justify-self: flex-end;
+    }
+    .contacts {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    .contact {
+        grid-template-columns: 30% 60%;
+        grid-column-gap: 10%;
+    }
+    .contact img {
+        justify-self: flex-end;
+    }
+    .contact h2 {
+        font-size: 1.6em;
     }
 }
